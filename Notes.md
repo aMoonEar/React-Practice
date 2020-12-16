@@ -135,3 +135,19 @@ const teacher = new Teacher('ms teacher', 'math');
 teacher.walk();
 teacher.teach();
 ```
+
+### Truthy and Falsy values
+
+In javascript, strings and integers can be truthy or falsy.
+An empty string and the number 0 is considered falsy
+
+```
+// Returns "Hello"
+true && "Hello"
+```
+
+## Basic React & Components
+
+### Editing states
+
+You cannot edit states just by referencing them, you have to use the method inherited from the Component, such as `setState()` and pass in an object that replaces the current object in the state.
