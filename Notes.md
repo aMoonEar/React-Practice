@@ -151,3 +151,11 @@ true && "Hello"
 ### Editing states
 
 You cannot edit states just by referencing them, you have to use the method inherited from the Component, such as `setState()` and pass in an object that replaces the current object in the state.
+
+### Passing arguments in a event
+
+You use a property such as `onClick` you pass a reference of the function. Thus, you cannot use parameters. So, you have to make a function in the property that uses the parameter.
+
+```
+<button onClick={ () => this.myfunction(parameter)}>
+```
